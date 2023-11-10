@@ -19,3 +19,34 @@ git clone <repository-url> Notes-App
 ```sh
 cd Notes-App
 ```
+
+## Setting Up the Database
+1. **Create a PostgreSQL Database**
+
+   Create a new PostgreSQL database for the application on your local machine or a remote server.
+
+2. **Add Connection String to .env File**
+
+   Navigate to the `notes-app-server` directory and create a `.env` file with the following content:
+
+   ```env
+   DATABASE_URL="postgresql://<username>:<password>@<host>:<port>/<dbname>?schema=public"
+   ```
+
+   Replace `<username>`, `<password>`, `<host>`, `<port>`, and `<dbname>` with your actual PostgreSQL database credentials and information.
+
+3. **Run Prisma Migration**
+
+   Navigate to the `notes-app-server` directory and run the following commands:
+
+   ```sh
+   npx prisma migrate dev --name init
+   ```
+
+   OR, if you encounter a "shadow db" error with the above command, you can force push/sync your DB:
+
+   ```sh
+   npx prisma db push
+   ```
+
+   This command will apply the Prisma migrations to your database and generate the Prisma client.

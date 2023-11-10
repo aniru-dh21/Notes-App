@@ -10,3 +10,12 @@ This project consists of two main parts: A React-Based Frontend (`notes-app-ui`)
 - PostgreSQL
 - Prisma CLI (`npm intsall -g prisma`)
 - React
+
+## Clone the Repository 
+
+```sh
+git clone <repository-url> Notes-App
+```
+```sh
+cd Notes-App
+```

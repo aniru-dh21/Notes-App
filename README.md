@@ -50,3 +50,25 @@ cd Notes-App
    ```
 
    This command will apply the Prisma migrations to your database and generate the Prisma client.
+
+## Setting Up and Running the Server
+
+1. **Navigate to the Server Directory**
+
+   ```sh
+   cd notes-app-server
+   ```
+
+2. **Install Dependencies**
+
+   ```sh
+   npm install
+   ```
+
+3. **Start the Server**
+
+   ```sh
+   npm start
+   ```
+
+   The server will start, and it will connect to the PostgreSQL database using the provided connection string.

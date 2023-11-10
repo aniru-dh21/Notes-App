@@ -72,3 +72,25 @@ cd Notes-App
    ```
 
    The server will start, and it will connect to the PostgreSQL database using the provided connection string.
+
+## Setting Up and Running the UI
+
+1. **Navigate to the UI Directory**
+
+   ```sh
+   cd notes-app-ui
+   ```
+
+2. **Install Dependencies**
+
+   ```sh
+   npm install
+   ```
+
+3. **Start the React App**
+
+   ```sh
+   npm start
+   ```
+
+   The React app will start, and it should connect to the Node.js server.

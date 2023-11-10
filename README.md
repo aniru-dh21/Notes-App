@@ -94,3 +94,19 @@ cd Notes-App
    ```
 
    The React app will start, and it should connect to the Node.js server.
+
+## Accessing the Application
+
+Once both the UI and server are running, you can access the application by navigating to:
+
+```
+http://localhost:3000
+```
+
+The API will be hosted on
+
+```
+http://localhost:5000
+```
+
+Adjust the port if your configuration is different.
